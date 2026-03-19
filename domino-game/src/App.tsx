@@ -3,8 +3,11 @@ import './App.css';
 import { RotateCw } from 'lucide-react';
 
 const SYLLABLES = [
-  'ma', 'da', 'ba', 'ta', 'la', 'ka', 'pa', 'ra', 'sa', 'za',
-  'na', 'wa', 'fa', 'ga', 'ha', 'ja', 'ca'
+  'ma', 'me', 'mi', 'mo', 'mu', 'my',
+  'ta', 'te', 'ti', 'to', 'tu', 'ty',
+  'la', 'le', 'li', 'lo', 'lu', 'ly',
+  'ka', 'ke', 'ki', 'ko', 'ku', 'ky',
+  'da', 'de', 'di', 'do', 'du', 'dy'
 ];
 
 const VOWELS = new Set(['a', 'e', 'i', 'o', 'u', 'y', 'ą', 'ę', 'ó']);
@@ -459,7 +462,7 @@ function App() {
       onPointerLeave={handlePointerUp}
     >
       <div className="header">
-        <h1 className="title">Sylabo Domino z Dzieszkoła.pl</h1>
+        <h1 className="title">Sylabo Domino z Kubą</h1>
         <div style={{pointerEvents: 'auto', display: 'flex', gap: '1rem'}}>
           <button 
             style={{padding: '0.75rem 1.5rem', fontSize: '1.2rem', borderRadius: '12px', border: '1px solid var(--palette-border)', background: 'var(--palette-bg)', color: '#fff', cursor: 'pointer', fontWeight: 600}}
